@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Web3Provider } from "@ethersproject/providers";
 import BurnerProvider from "burner-provider";
-import { INFURA_ID } from "../constants";
+import { ALCHEMY_ID } from "../constants";
 
 /*
   ~ What it does? ~
@@ -56,7 +56,7 @@ useMemo(() => {
   }else{
     // eslint-disable-next-line no-underscore-dangle
     const networkName = localProvider._network && localProvider._network.name;
-    burnerConfig.rpcUrl = `https://${networkName || "mainnet"}.infura.io/v3/${INFURA_ID}`
+    burnerConfig.rpcUrl = `https://${networkName || "mainnet"}eth-sepolia.g.alchemy.com/v2/${ALCHEMY_ID}`
     return new Web3Provider(new BurnerProvider(burnerConfig));
   }
 }, [injectedProvider, localProvider]);
