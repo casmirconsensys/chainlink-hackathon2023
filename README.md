@@ -14,7 +14,7 @@ in a second terminal window, start your 📱 frontend:
 
 cd chainlink-keeper-demo
 yarn start
-in a third terminal window, gnerate a deployer account, fund it with Kovan, and 🛰 deploy your contract:
+in a third terminal window, gnerate a deployer account, fund it with Sepolia, and 🛰 deploy your contract:
 
 cd chainlink-keeper-demo
 yarn generate
